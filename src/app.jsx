@@ -1,13 +1,11 @@
 import React from "react";
 import { GlobalStyle } from "./styles/GlobalStyles";
+import { Button } from "./Components/Button/index";
 export default function app() {
     return (
-        // <Container>
-        <GlobalStyle />
-        //     <Wrapper>
-    
-        //     </Wrapper>
-        // </Container>
-
+        <>
+            <Button className="cp">Olá</Button>
+            <GlobalStyle />
+        </>
     );
 }

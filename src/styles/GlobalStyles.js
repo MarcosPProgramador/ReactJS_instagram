@@ -54,4 +54,7 @@ export const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         background-color: var(--white);
     }
+    .cp{
+        cursor: pointer;
+    }
 `;
