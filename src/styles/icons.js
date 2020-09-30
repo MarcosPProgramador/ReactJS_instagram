@@ -1,8 +1,8 @@
-export { Instagram } from "@styled-icons/entypo-social/Instagram";
 export { Search } from "@styled-icons/evaicons-solid/Search";
-export { Home } from "@styled-icons/foundation/Home";
+export { HomeFill as Home } from "@styled-icons/octicons/HomeFill";
 export { Send } from "@styled-icons/feather/Send";
 export { SendPlane } from "@styled-icons/remix-fill/SendPlane";
-export { CompassFill, Compass } from "@styled-icons/bootstrap";
+export { Compass } from "@styled-icons/remix-fill/Compass";
 export { Heart } from "@styled-icons/feather/Heart";
-export { PersonCircle } from "@styled-icons/ionicons-sharp/PersonCircle";
+export { MessageCircle as Float } from "@styled-icons/feather/MessageCircle";
+export { BookmarkFill as Bookmark } from "@styled-icons/bootstrap/BookmarkFill";

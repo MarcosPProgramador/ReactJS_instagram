@@ -16,9 +16,9 @@ export const GlobalStyle = createGlobalStyle`
         --white: #fff;
         --gray: #6c757d;
         --dark: #343a40;
-        --breakpoint-sm: 576px;
+        /* --breakpoint-sm: 576px;
         --breakpoint-md: 768px;
-        --breakpoint-lg: 992px;
+        --breakpoint-lg: 992px; */
         --jb7: rgb(0,0,0);
         --i1d: rgb(38,38,38);
         --j64: rgb(54,54,54);

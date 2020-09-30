@@ -7,14 +7,25 @@ const LogoSize = styled.div`
     display: flex;
 `;
 const Link = styled.a`
-    display: inline-block;
+    display: flex;
+    align-items: center;
+
     text-decoration: none;
-`
+    &:active {
+        opacity: 0.5;
+    }
+    img {
+        @media (max-width:576px) {
+            width: min( max(18vw, 72px), 103px);
+            height: min( max(5vw, 20px), 29px);
+        }
+    }
+`;
 const Breadlogo = () => {
     return (
         <LogoSize>
-            <Link href="#">
-                <img src="./img/logo.png" alt=""/>
+            <Link href="/">
+                <img src="./img/logo.png" alt="" />
             </Link>
         </LogoSize>
     );

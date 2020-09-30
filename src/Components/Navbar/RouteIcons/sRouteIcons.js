@@ -1,56 +1,68 @@
 import styled, { css } from "styled-components";
-import {
-    Home,
-    SendPlane,
-    Send,
-    Compass,
-    CompassFill,
-    Heart,
-    PersonCircle,
-} from "../../../styles/icons";
+import { Home, SendPlane, Send, Compass, Heart } from "../../../styles/icons";
 export const Container = styled.div`
     display: flex;
+    a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        a * {
+            pointer-events: none;
+        }
+        &::after {
+            content: "";
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
 `;
 const sty = css`
     width: 26px;
     height: 26px;
     color: var(--i1d);
-    margin: 0 10px;
-`;
-const fill = css`
-    stroke: var(--i1d);
-    fill: var(--i1d);
-`;
-export const HomeIcon = styled(Home)`
-    stroke-width: 5px;
-    stroke: black;
-
+    margin: 0 11px;
     fill: transparent;
-    &.fill {
-        ${fill}
+    &:active {
+        opacity: 0.5;
     }
+    &.fill {
+        fill: var(--i1d);
+    }
+    @media (max-width: 768px) {
+        margin: 0 min(2vw, 11px);
+        width: min(max(5vw, 14px), 26px);
+        height: min(max(5vw, 14px), 26px);
+    }
+`;
+
+export const HomeIcon = styled(Home)`
+    stroke: var(--i1d);
+    stroke-width: 1px;
     ${sty}
 `;
 export const SendIcon = styled(Send)`
     ${sty}
 `;
 export const SendPlaneIcon = styled(SendPlane)`
-    ${sty}
-`;
-export const CompassIcon = styled(Compass)`
-    ${sty}
-`;
-export const CompassFillIcon = styled(CompassFill)`
-    ${sty}
-`;
-export const HeartIcon = styled(Heart)`
-    &.fill {
-        ${fill}
+    & path:nth-child(2) {
+        stroke: var(--i1d);
     }
 
     ${sty}
 `;
-export const PersonIcon = styled(PersonCircle)`
-    fill: var(--e22);
+export const CompassIcon = styled(Compass)`
+    stroke-width: 1px;
+    & path:nth-child(2) {
+        stroke: var(--i1d);
+    }
+
+    ${sty}
+`;
+export const HeartIcon = styled(Heart)`
     ${sty}
 `;
