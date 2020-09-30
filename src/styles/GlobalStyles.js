@@ -19,6 +19,21 @@ export const GlobalStyle = createGlobalStyle`
         --breakpoint-sm: 576px;
         --breakpoint-md: 768px;
         --breakpoint-lg: 992px;
+        --jb7: rgb(0,0,0);
+        --i1d: rgb(38,38,38);
+        --j64: rgb(54,54,54);
+        --f52: rgb(142,142,142);
+        --ba8: rgb(168,168,168);
+        --e22: rgb(199,199,199);
+        --bb2: rgb(239,239,239);
+        --b3f: rgb(250,250,250);
+        --fa7: rgb(224,241,255);
+        --fe0: rgb(0,55,107);
+        --d69: rgb(0,149,246);
+        --jbb: rgb(53,121,234);
+        --b86: rgb(88,195,34);
+        --i30: rgb(237,73,86);
+
     }
     *{
         margin: 0;
@@ -44,9 +59,10 @@ export const GlobalStyle = createGlobalStyle`
         scrollbar-width: thin;
 
     }
-    html,body{
+    html,body, #root{
 
         min-width: 260px;
+        height: 100%;
         min-height: 100vh;
 
     }
