@@ -13,21 +13,24 @@ const icon = css`
         stroke: var(--i1d);
     }
     stroke-width: 1px;
-    width: 30px;
-    height: 30px;
+    width: min(max(4vw, 20px), 30px);
+    height: min(max(4vw, 20px), 30px);
     color: var(--i1d);
 `;
 export const Container = styled(BorderRadius)`
-    width: 614px;
     margin: 30px 0;
+    @media (max-width: 640px) {
+        margin: 2px 0;
+    }
     border: 0;
+
     @media (min-width: 640px) {
         border: 1px solid var(--e22);
         background-color: var(--white);
     }
 `;
 export const UserInfo = styled.div`
-    border-bottom: 1px solid var(--e22);
+    border-bottom: 1px solid var(--bb2);
     padding: 16px;
     ${flex}
     height: 60px;
@@ -61,7 +64,7 @@ export const Readmore = styled.div``;
 export const UserImage = styled.div`
     background-color: var(--bb2);
     position: relative;
-    height: 614px;
+    padding-bottom: 100%;
 `;
 
 export const Overlay = styled.div`
@@ -77,7 +80,7 @@ export const UserDatas = styled.div`
     padding: 16px;
 `;
 export const Icons = styled.div`
-    padding-bottom: 8px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
     & > svg {
@@ -102,7 +105,8 @@ export const SendIcon = styled(SendPlane)`
 export const LikeFor = styled.div`
     display: flex;
     align-items: center;
-    & > span{
+    & > span {
+        font-size: min(max(3vw, 8px), 15px);
         line-height: 0;
     }
     & > span strong {
@@ -110,9 +114,10 @@ export const LikeFor = styled.div`
     }
 `;
 export const LikeAvatar = styled.div`
+    flex-shrink: 0;
     margin-right: 7px;
-    width: 27px;
-    height: 27px;
+    width: min(max(4vw, 13px), 27px);
+    height: min(max(4vw, 13px), 27px);
     border-radius: 50%;
     background-color: var(--f52);
 `;

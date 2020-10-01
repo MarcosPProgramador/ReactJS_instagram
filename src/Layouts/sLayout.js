@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Centralize } from "../Components/Centralize/Centralize";
 export const Container = styled.div`
-    top: 0; 
+    top: 0;
     left: 0;
     width: 100%;
     min-width: 260px;
@@ -10,8 +10,4 @@ export const Container = styled.div`
     background-color: var(--b3f);
     height: 100%;
 `;
-export const Wrapper = styled(Centralize)`
-    display: flex;
-    justify-content: center;
-
-`;
+export const Wrapper = styled(Centralize)``;
