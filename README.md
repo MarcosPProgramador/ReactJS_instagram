@@ -3,7 +3,7 @@
 
 ## Preview
 
-![alt](./img/layout.png)
+![alt](./public/img/layout.png)
 
 **Technologies used:**
 - _HTML_
