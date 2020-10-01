@@ -24,7 +24,8 @@ export const GlobalStyle = createGlobalStyle`
         --j64: rgb(54,54,54);
         --f52: rgb(142,142,142);
         --ba8: rgb(168,168,168);
-        --e22: rgb(199,199,199);
+        --e12: rgb(190,190,190);
+        --e22: rgb(230,230,230);
         --bb2: rgb(239,239,239);
         --b3f: rgb(250,250,250);
         --fa7: rgb(224,241,255);

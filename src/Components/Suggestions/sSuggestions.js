@@ -73,7 +73,7 @@ export const AboutTab = styled.li`
         position: absolute;
         top: 50%;
         right: 0;
-        background-color: var(--e22);
+        background-color: var(--e12);
         height: 3px;
         width: 3px;
         border-radius: 50%;
@@ -81,10 +81,10 @@ export const AboutTab = styled.li`
 `;
 export const AboutLink = styled.a`
     cursor: pointer;
-    color: var(--e22);
+    color: var(--e12);
 `;
 export const AboutInst = styled.div`
     margin-top: 20px;
     font-size: 12px;
-    color: var(--e22);
+    color: var(--e12);
 `;
