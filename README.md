@@ -1,6 +1,6 @@
 # Project create by Marcos Proença
 
-## clone instagram
+## Clone instagram
 
 ## Preview
 
