@@ -4,7 +4,7 @@
 
 ## Preview
 
-![alt](./public/img/layout.png)
+![alt](./public/img/layouts.png)
 
 **Technologies used:**
 
