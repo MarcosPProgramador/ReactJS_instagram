@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components";
-import { Home, SendPlane, Send, Compass, Heart } from "../../../styles/icons";
+import { Home, SendPlane, Compass, Heart } from "../../../styles/icons";
 export const Container = styled.div`
     display: flex;
-    a {
+    a,
+    button {
         position: relative;
         display: flex;
         align-items: center;
@@ -20,6 +21,10 @@ export const Container = styled.div`
             bottom: 0;
         }
     }
+    button {
+        background-color: transparent;
+        border: 0;
+    }
 `;
 const sty = css`
     width: 26px;
@@ -27,6 +32,7 @@ const sty = css`
     color: var(--i1d);
     margin: 0 11px;
     fill: transparent;
+
     &:active {
         opacity: 0.5;
     }
@@ -43,9 +49,6 @@ const sty = css`
 export const HomeIcon = styled(Home)`
     stroke: var(--i1d);
     stroke-width: 1px;
-    ${sty}
-`;
-export const SendIcon = styled(Send)`
     ${sty}
 `;
 export const SendPlaneIcon = styled(SendPlane)`

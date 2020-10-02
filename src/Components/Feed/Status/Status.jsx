@@ -57,11 +57,11 @@ const Status = () => {
     return (
         <Container>
             <Box>
-                {api.map((api) => {
+                {api.map((api, i) => {
                     return (
-                        <User>
-                            <UserCircle />
-                            <UserName>{api.username}</UserName>
+                        <User key={i + 3}>
+                            <UserCircle key={i + 2}/>
+                            <UserName key={i + 1}>{api.username}</UserName>
                         </User>
                     );
                 })}

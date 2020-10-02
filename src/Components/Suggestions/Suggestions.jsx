@@ -52,10 +52,10 @@ const Suggestions = () => {
             </Users>
             <About>
                 <AboutList>
-                    {arr.map((e) => {
+                    {arr.map((e, i) => {
                         return (
-                            <AboutTab>
-                                <AboutLink>{e}</AboutLink>
+                            <AboutTab key={i + 1}>
+                                <AboutLink key={i}>{e}</AboutLink>
                             </AboutTab>
                         );
                     })}

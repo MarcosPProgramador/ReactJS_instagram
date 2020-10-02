@@ -3,7 +3,6 @@ import {
     Container,
     HomeIcon,
     SendPlaneIcon,
-    SendIcon,
     CompassIcon,
     HeartIcon,
 } from "./sRouteIcons";
@@ -20,9 +19,7 @@ const RouteIcons = () => {
         }
     };
     const add = (el, tg) => {
-        [...tg.children].map((e) => {
-            e.classList.add(el);
-        });
+        [...tg.children].map((e) => e.classList.add(el));
     };
 
     return (
@@ -36,9 +33,9 @@ const RouteIcons = () => {
             <a href="/compass" onClick={addAndRemove}>
                 <CompassIcon className="icon" />
             </a>
-            <a  onClick={addAndRemove}>
+            <button onClick={addAndRemove}>
                 <HeartIcon className="icon" />
-            </a>
+            </button>
         </Container>
     );
 };
