@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { BorderRadius } from "../Bdrs/Bdrs";
 import { Float, Heart, SendPlane } from "../../../styles/icons";
+import { AvatarCircle } from "../../Avatar/Avatar";
 const flex = css`
     display: flex;
     align-items: center;
@@ -42,9 +43,7 @@ export const User = styled.div`
 export const WrapperUser = styled.div`
     ${flex}
 `;
-export const Avatar = styled.div`
-    border-radius: 50rem;
-    border: 1px solid red;
+export const Avatar = styled(AvatarCircle)`
     flex-shrink: 0;
     height: 42px;
     width: 42px;

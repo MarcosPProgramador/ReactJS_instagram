@@ -1,7 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import { BorderRadius } from "../Bdrs/Bdrs";
-
+import styled from "styled-components";
+import { AvatarCircle } from "../../Avatar/Avatar";
 const Container = styled(BorderRadius)`
     margin-top: 38px;
     @media (max-width: 640px) {
@@ -22,12 +22,10 @@ const Box = styled.div`
 const User = styled.div`
     text-align: center;
 `;
-const UserCircle = styled.div`
+const UserCircle = styled(AvatarCircle)`
     margin: 0 13px;
     height: 66px;
     width: 66px;
-    border-radius: 50%;
-    border: 1px solid red;
 `;
 const UserName = styled.div`
     margin-top: 6px;

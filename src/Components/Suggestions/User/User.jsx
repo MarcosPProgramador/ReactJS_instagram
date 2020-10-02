@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import React from "react";
 import { Button } from "../../Button/Button";
+import { AvatarCircle } from "../../Avatar/Avatar";
 const flex = css`
     display: flex;
     align-items: center;
@@ -16,7 +17,7 @@ export const SugesWrapper = styled.div`
     margin-top: 10px;
     ${flex}
 `;
-export const SugesAvatar = styled.div`
+export const SugesAvatar = styled(AvatarCircle)`
     width: 42px;
     height: 42px;
     border-radius: 50%;

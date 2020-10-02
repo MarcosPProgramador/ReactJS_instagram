@@ -27,16 +27,16 @@ const RouteIcons = () => {
 
     return (
         <Container>
-            <a href="#" onClick={addAndRemove}>
+            <a href="/" onClick={addAndRemove}>
                 <HomeIcon className="icon fill" />
             </a>
-            <a href="#" onClick={addAndRemove}>
+            <a href="/send" onClick={addAndRemove}>
                 <SendPlaneIcon className="icon" />
             </a>
-            <a href="#" onClick={addAndRemove}>
+            <a href="/compass" onClick={addAndRemove}>
                 <CompassIcon className="icon" />
             </a>
-            <a href="#" onClick={addAndRemove}>
+            <a  onClick={addAndRemove}>
                 <HeartIcon className="icon" />
             </a>
         </Container>
