@@ -12,7 +12,7 @@ export const AvatarCircle = styled.div`
         bottom: -2px;
         position: absolute;
         border-radius: 50%;
-        background-image: linear-gradient(-135deg, var(--i30), #ffe66d);
+        background-image: linear-gradient(-135deg, #b955d8, #ffe66d);
     }
     &::before {
         border: 2px solid var(--white);

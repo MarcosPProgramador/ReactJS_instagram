@@ -36,22 +36,22 @@ const Status = () => {
         {
             id: 0,
             img: "#",
-            username: "||marcos_a",
+            username: "username",
         },
         {
             id: 1,
             img: "#",
-            username: "pedrinho_s",
+            username: "username",
         },
         {
             id: 2,
             img: "#",
-            username: "colosso_senior",
+            username: "username",
         },
         {
             id: 3,
             img: "#",
-            username: "salve_salve",
+            username: "username",
         },
     ];
     return (

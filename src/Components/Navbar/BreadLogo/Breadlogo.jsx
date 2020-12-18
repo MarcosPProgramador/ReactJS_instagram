@@ -25,7 +25,7 @@ const Breadlogo = () => {
     return (
         <LogoSize>
             <Link href="/">
-                <img src="./img/logo.png" alt="" />
+                <img src="./assets/icon/logo.png" alt="" />
             </Link>
         </LogoSize>
     );

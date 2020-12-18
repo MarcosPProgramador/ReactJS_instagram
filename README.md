@@ -1,16 +1,22 @@
 # Project create by Marcos Proença
 
-## Clone instagram
+## Before you start, download the dependencies | **`npm i`**
 
 ## Preview
 
-![alt](./public/img/layouts.png)
+-   desktop
+
+    ![layout-desktop](./public/assets/img/layout-desktop.png)
+
+-   mobile
+
+    ![layout-mobile](./public/assets/img/layout-mobile.png)
 
 **Technologies used:**
 
--   _HTML_
--   _styled components_
--   _styled icons_
--   _React JS_
--   _Git_
--   _NPM_
+-   HTML
+-   styled-components
+-   styled-icons
+-   React
+-   Git
+-   NPM
